@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Html</title>
+    <style>
+        .myDiv {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>67.Thitipong Hongkaroon</h3>
+    <h3>04 Introduction Web Programming (Lab Html)</h3>
+    <hr>
+    <h3>1.Attribute</h3>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Attribute</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>tag h</td>
+                <td>หัวเรื่อง กำหนดขนาดตัวหนังสือ มีตั้งแต่ h1ขนาดตัวหนังสือใหญ่สุด ถึง h6ขนาดตัวหนังสือเล็กสุด
+                    <h1>This is heading 1</h1>
+                    <h2>This is heading 2</h2>
+                    <h3>This is heading 3</h3>
+                    <h4>This is heading 4</h4>
+                    <h5>This is heading 5</h5>
+                    <h6>This is heading 6</h6>
+                </td>
+            </tr>
+            <tr>
+                <td>tag p</td>
+                <td>พารากราฟ
+                    <p>This is a paragraph.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>tag a</td>
+                <td>
+                    download ระบุว่าจะถูกดาวน์โหลดเมื่อผู้ใช้คลิ๊กที่ hyperlink<br>
+                    href ระบุ URL ของหน้าที่ลิงค์ไว้<br>
+                    hreflang ระบุภาษาของเอกสารที่ลิงค์ไว้<br>
+                    media ระบุสื่อหรืออุปกรณ์ที่เหมาะกับกับเอกสารที่ลิงค์ไว้<br>
+                    ping ระบุแยกลิสโดยช่องว่างของ URL ว่าที่ไหนเมื่อไหร่ที่ลิงค์ถูกติดตาม ลงคำขอกับ ping
+                    ที่จะถูกส่งโดยบราวเซอร์ ปกติจะถูกใช้เพื่อการเอาไว้ติดตาม<br>
+                    rel ระบุความสัมพันธ์ระหว่างเอกสารปัจจุบันกับเอกสารที่ถูกลิงค์<br>
+                    target ระบุตำแหน่งที่จะเปิดเอกสารที่เชื่อมโยง<br>
+                    type ระบุประเภทสื่อสิ่งพิมพ์ของเอกสารที่เชื่อมโยง<br> <br>
+                    <p>An absolute URL: <a href="https://www.w3schools.com">W3Schools</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>tag button</td>
+                <td>ปุ่มกด attribute = type <br>
+                    <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+                </td>
+            <tr>
+                <td>tag ul</td>
+                <td>style รูปแบบของul เช่น จุดดำ
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>tag ol</td>
+                <td>reversed ระบุว่าควรเรียงลำดับรายการแบบย้อนกลับ (9,8,7 ... )<br>
+                    start ระบุค่าเริ่มต้นของรายการที่สั่ง<br>
+                    type ระบุชนิดของเครื่องหมายที่จะใช้ในรายการ<br> <br>
+                    <ol>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>tag div</td>
+                <td>
+                    <div class="myDiv">
+                        <h2>กล่องข้อความแบบblock element จะอยู่บรรทัดถัดไปจากelementก่อนหน้า</h2>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>tag img</td>
+                <td>alt ระบุข้อความสำรองสำหรับรูปภาพ<br>
+                    height ระบุความสูงของรูปภาพ <br>
+                    src ระบุตำแหน่งชี้ไปยังรูปภาพ <br>
+                    width ระบุความกว้างของภาพ <br>
+                    border กำหนดขนาดขอบของรูปภาพ<br>
+                    crossorigin เพื่ออนุญาติหรือไม่อนุญาติให้ผู้ใช้ดาว์นโหลดรูปภาพ<br>
+                    ismap กำหนดรูปภาพด้าน server side<br>
+                    longdesc แสดง URL เพื่อแสดงคำอธิบายรูปภาพ<br>
+                    referrerpolicy ระบุผู้อ้างอิงที่จะใช้เวลาดึงภาพ<br>
+                    sizes กำหนดขนาดของรูปภาพสำหรับpage layoutที่ขนาดต่างกัน<br> <br>
+                    <img src="http://4.bp.blogspot.com/--ymKtoCyNjc/TWXHpnN_wqI/AAAAAAAAAF0/4ZVafDutgDg/s320/Club_ID_Winner_by_ragnarok_addicts.jpg"
+                        alt="Ragnarok in memory" width="300" height="300">
+                </td>
+            </tr>
+            <tr>
+                <td>tag table</td>
+                <td>align เพื่อจัดตำแหน่ง<br>
+                    bgcolor กำหนดสีด้านหลังแบคกราวของตาราง<br>
+                    border กำหนดขนาดขอบของตาราง<br>
+                    width กำหนดความกว้างของตาราง<br><br>
+                    <table border="2">
+                        <thead>
+                            <tr>
+                                <th>Job</th>
+                                <th>Discription</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Swordman</td>
+                                <td>นักดาบ โจมตีใกล้</td>
+                            </tr>
+                            <tr>
+                                <td>Archer</td>
+                                <td>นักธนู โจมตีไกล</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>tag form</td>
+                <td>
+                    accept-charset ระบุการเข้ารหัสตัวหนังสือเพื่อการส่งแบบฟอร์ม<br>
+                    action ระบุตำแหน่งที่จะส่งข้อมูลแบบฟอร์มเมื่อส่งแบบฟอร์ม<br>
+                    autocomplete ระบุว่าฟอร์มควรมีการเปิดหรือปิดการเติมข้อความอัตโนมัติ<br>
+                    enctype ระบุวิธีการเข้ารหัสข้อมูลแบบฟอร์มเมื่อส่งไปยังเซิร์ฟเวอร์ (เฉพาะ method="post")<br>
+                    method ระบุวิธีใช้ HTTP เมื่อส่งแบบฟอร์มข้อมูล<br>
+                    name ระบุชื่อแบบฟอร์มข้อมูล<br>
+                    novalidate ระบุว่าไม่ควรตรวจสอบความถูกต้องของฟอร์มเมื่อส่ง<br>
+                    target ระบุตำแหน่งที่จะแสดงข้อความตอบสนองหลังจากส่งแบบฟอร์ม<br>
+                    rel ระบุความสัมพันธ์ระหว่างทรัพยากรที่เชื่อมโยงกับเอกสารปัจจุบัน<br> <br>
+                    <form action="">
+                        <input type="text"> <br>
+                        <input type="checkbox"> <br>
+                        <input type="image"> <br>
+                        <input type="email"> <br>
+                        <input type="password"> <br>
+                    </form>
+                </td>
+            </tr>
+            </tr>
+        </tbody>
+
+    </table> <br><br><hr><br>
+
+    <table border="3">
+        <h3>2.Differentiation</h3>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>เหมือนกัน</th>
+                <th>แตกต่าง</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>hr & br</td>
+                <td>เป็นการแบ่งเนื้อหาข้อมูลออกเหมือนกัน</td>
+                <td>hr = แบ่งโดยใช้เส้นขีดยาว , br = แบ่งโดยการเว้นบรรทัด </td>
+            </tr>
+            <tr>
+                <td>ul & ol</td>
+                <td>เป็นการเรียงข้อมูลออกมาในรูปแบบลิสเหมือนกัน</td>
+                <td>ul คือ unordered list มีสัญลักษณ์ต่างๆที่ไม่ใช้เลข<br>
+                    ol คือ ordered list จะเรียงโดยใช้ตัวเลข </td>
+            </tr>
+            <tr>
+                <td>select & checkbox & radio button</td>
+                <td>เป็นformตัวเลือกเหมือนกัน</td>
+                <td>select เป็นรูปแบบของ dropdown lists มีตัวเลือกลงมา</br>
+                    checkbox เป็นรูปแบบของการกดเลือกในกล่องสี่เหลี่ยมซึ่งสามารถเลือกได้มากกว่าหนึ่งช่อง</br>
+                    radio button เป็นรูปแบบของการกดเลือกในกล่องสี่เหลี่ยมได้เพียงกล่องเดียว
+                </td>
+            </tr>
+            <tr>
+                <td>div & span</td>
+                <td>เป็น Element เหมือนกัน</td>
+                <td>div เป็น block element จะถูกจัดเรียงกันลงมาคนละบรรทัด</br>
+                    span เป็น inline element จะถูกจัดเรียงติดกันโดยอยุ่ในบรรทัดเดียวกัน
+                </td>
+            </tr>
+            <tr>
+                <td>script & style</td>
+                <td>เป็น internal tag ที่ใช้ในไฟล์ html เหมือนกัน</td>
+                <td>script เป็นแทคสำหรับการเขียน javascript <br>
+                    style เป็นแทคสำหรับการตกแต่งกับ css</td>
+            </tr>
+        </tbody>
+
+    </table> <br><br><hr><br>
+
+    <table border="3">
+        <h3>3.Input type</h3>
+        <thead>
+            <tr>
+                <th>Input Type</th>
+                <th>การใช้งาน</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>input type="text"</td>
+                <td>กำหนดฟิลด์ป้อนข้อความบรรทัดเดียว</td>
+            </tr>
+            <tr>
+                <td>input type="password"</td>
+                <td>กำหนดฟิลด์รหัสผ่าน</td>
+            </tr>
+            <tr>
+                <td>input type="submit"</td>
+                <td>กำหนดปุ่มสำหรับส่งข้อมูลแบบฟอร์มไปยัง แบบฟอร์มการจัดการ <br>
+                    แบบฟอร์มการจัดการ เป็นหน้าเซิร์ฟเวอร์ที่มีสคริปต์สำหรับประมวลผลข้อมูลอินพุต <br>
+                    แบบฟอร์มการจัดการ ถูกระบุในแอ็ตทริบิวต์ action ของฟอร์ม</td>
+            </tr>
+            <tr>
+                <td>input type="reset"</td>
+                <td>กำหนดปุ่มรีเซ็ตที่จะรีเซ็ตค่าแบบฟอร์มทั้งหมดเป็นค่าเริ่มต้น</td>
+            </tr>
+            <tr>
+                <td>input type="radio"</td>
+                <td>กำหนดปุ่มตัวเลือก <br>
+                    ปุ่มตัวเลือกให้ผู้ใช้เลือกหนึ่งตัวเลือกในจำนวนจำกัดเท่านั้น</td>
+            </tr>
+            <tr>
+                <td>input type="checkbox"</td>
+                <td>กำหนดช่องทำเครื่องหมาย <br>
+                    ช่องทำเครื่องหมายให้ผู้ใช้เลือก ไม่เลือกเลย หรือ เลือกเพิ่มเติมของตัวเลือกทั้งหมด</td>
+            </tr>
+            <tr>
+                <td>input type="button"</td>
+                <td>กำหนดปุ่มกด</td>
+            </tr>
+            <tr>
+                <td>input type="color"</td>
+                <td>ใช้สำหรับฟิลด์อินพุตที่ควรมีสี <br>
+                    ตัวเลือกสีสามารถแสดงขึ้นในช่องป้อนข้อมูลทั้งนี้ขึ้นอยู่กับการสนับสนุนของเบราว์เซอร์</td>
+            </tr>
+            <tr>
+                <td>input type="date"</td>
+                <td>ใช้สำหรับฟิลด์อินพุตที่ควรมีวันที่ <br>
+                    ตัวเลือกวันที่สามารถแสดงขึ้นในฟิลด์ป้อนข้อมูลทั้งนี้ขึ้นอยู่กับการสนับสนุนของเบราว์เซอร์</td>
+            </tr>
+            <tr>
+                <td>input type="datetime-local"</td>
+                <td>ระบุเขตข้อมูลวันที่และเวลาโดยไม่มีเขตเวลา <br>
+                    ตัวเลือกวันที่สามารถแสดงขึ้นในฟิลด์ป้อนข้อมูลทั้งนี้ขึ้นอยู่กับการสนับสนุนของเบราว์เซอร์</td>
+            </tr>
+            <tr>
+                <td>input type="email"</td>
+                <td>ใช้สำหรับฟิลด์อินพุตที่ควรมีที่อยู่อีเมล <br>
+                    ที่อยู่อีเมลสามารถตรวจสอบได้โดยอัตโนมัติเมื่อส่ง</td>
+            </tr>
+            <tr>
+                <td>input type="file"</td>
+                <td>กำหนดฟิลด์เลือกไฟล์และปุ่ม "เรียกดู" สำหรับการอัพโหลดไฟล์</td>
+            </tr>
+            <tr>
+                <td>input type="month"</td>
+                <td>อนุญาตให้ผู้ใช้เลือกเดือนและปี <br>
+                    ตัวเลือกวันที่สามารถแสดงขึ้นในฟิลด์ป้อนข้อมูลทั้งนี้ขึ้นอยู่กับการสนับสนุนของเบราว์เซอร์</td>
+            </tr>
+            <tr>
+                <td>input type="number"</td>
+                <td>กำหนดฟิลด์อินพุตเป็นตัวเลข <br>
+                    นอกจากนี้คุณยังสามารถกำหนดข้อ จำกัด เกี่ยวกับหมายเลขที่ยอมรับได้
+                </td>
+            </tr>
+            <tr>
+                <td>input type="range"</td>
+                <td>กำหนดตัวควบคุมสำหรับการป้อนตัวเลขซึ่งค่าที่ไม่สำคัญ <br>
+                    (เช่นตัวควบคุมแถบเลื่อน) ช่วงเริ่มต้นคือ 0 ถึง 100 อย่างไรก็ตามคุณสามารถกำหนดข้อ จำกัด
+                    เกี่ยวกับตัวเลขที่ยอมรับได้ด้วยแอตทริบิวต์ min, max และ step</td>
+            </tr>
+            <tr>
+                <td>input type="search"</td>
+                <td>ใช้สำหรับช่องค้นหา (ช่องค้นหาจะทำงานเหมือนกับช่องข้อความทั่วไป)</td>
+            </tr>
+            <tr>
+                <td>input type="tel"</td>
+                <td>ใช้สำหรับฟิลด์อินพุตที่ควรมีหมายเลขโทรศัพท์</td>
+            </tr>
+            <tr>
+                <td>input type="time"</td>
+                <td>อนุญาตให้ผู้ใช้เลือกเวลา (ไม่มีเขตเวลา) <br>
+                    ตัวเลือกเวลาสามารถปรากฏขึ้นในฟิลด์อินพุตทั้งนี้ขึ้นอยู่กับการสนับสนุนของเบราว์เซอร์</td>
+            </tr>
+            <tr>
+                <td>input type="url"</td>
+                <td>ใช้สำหรับฟิลด์อินพุตที่ควรมีที่อยู่ URL <br>
+                    ขึ้นอยู่กับการสนับสนุนของเบราว์เซอร์ฟิลด์ url สามารถตรวจสอบความถูกต้องโดยอัตโนมัติเมื่อส่ง</td>
+            </tr>
+            <tr>
+                <td>input type="week"</td>
+                <td>อนุญาตให้ผู้ใช้เลือกหนึ่งสัปดาห์และหนึ่งปี <br>
+                    ตัวเลือกวันที่สามารถแสดงขึ้นในฟิลด์ป้อนข้อมูลทั้งนี้ขึ้นอยู่กับการสนับสนุนของเบราว์เซอร์</td>
+            </tr>
+            
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
