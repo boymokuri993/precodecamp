@@ -1,0 +1,484 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h3 {
+      background-color: rgb(9, 245, 127);   
+  }
+  
+  h2 {
+    background-color: rgb(131, 93, 218);
+  }
+  
+  /* ---------------------tooltip----------------------- */
+
+  .tooltip {
+    position: relative;
+    /* relative สัมพันธ์กับตาราง */
+    display: inline-block;
+    border-bottom: 3px solid black;
+    /* ขีดเส้นใต้ */
+  }
+  
+  .tooltip > .tooltiptext {
+    visibility: hidden;
+    /* การโชว์ข้อความ : hidden คือ ซ่อน , visible คือ แสดงข้อความ */
+    width: 120px;
+    /* ความกว้างพื้นหลัง */ 
+    background-color: rgb(10, 12, 1);
+    /* สีพื้นหลัง */
+    color: rgb(235, 234, 241);
+    /* สีตัวอักษร */
+    text-align: center;
+    /* จัดตำแหน่งข้อความ */
+    border-radius: 6px;
+    /* ความโค้งของมุม */
+    padding: 5px 0;
+    /* พื้นที่รอบๆข้อความ */
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    /* การซ้อนกัน ค่ามากอยู่บน ค่าน้อยอยู่หลัง */
+    top: -5px;
+    /* โชว์ข้อความขึ้นบน */
+    left: 110%;
+    /* โชว์ข้อความทางขวา */
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    /* ความทึบแสง */
+    transition: opacity 1s;
+    /* ระยะเวลาทึบแสง */
+
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    /* hover เอาเม้าส์มาวางบน */
+    opacity: 1;
+  }  
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    /* ข้อความใน .tooltiptext */
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(224, 25, 25) transparent transparent;
+    /* หัวลูกศรทางซ้าย */
+  }
+
+  
+  /* ------------------------------------------------------------------------- */
+
+  /*---------------------------pagination --------------------------------------*/
+
+  
+  .w3-container{
+    padding:1em 10px;
+    /* ระยะข้อความ  */
+  }
+
+  .w3-button{
+    width:100%;
+    text-align:center;
+    padding:16px 16px;
+  }
+
+  .w3-button:hover{
+    color:#000;
+    background-color:#ccc;
+  }
+
+
+  .w3-bar {
+    padding:16px 16px;
+    float: inline-start;
+    /* float ลักษณะการลอย */
+    width:auto;
+    border:none;
+    display:block;
+    outline: 0;
+    /* ส่วนนอก padding */
+  }
+
+  .w3-bar > .w3-button{
+    white-space:normal;
+    /* แสดงผลข้อความปกติ */
+  }
+
+  .w3-green {
+    /* ใข้สีกำหนดลิ้งค์เริ่มต้น */
+    color:#fff!important;
+    background-color:rgb(97, 37, 238)!important;
+  }
+
+  .w3-border{
+    border:1px solid #ccc!important;
+  }
+
+  .w3-round{
+    border-radius:4px;
+    /* มุมกรอบ */
+  }
+
+    div a {
+      text-decoration: none;
+    }
+
+  /* --------------------------------------------------------- */
+
+  /* -----------------------Navigation bar--------------------  */
+   
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    /* แบ่งแยกช่องว่างระหว่าง element ของเราจาก ข้างนอก */
+    padding: 0;
+    /* แบ่งแยกช่องว่างระหว่าง element ของเราจาก ข้างใน */
+    overflow: hidden;
+    background-color:rgb(204, 17, 73);
+  }
+  
+  li {
+    float: left;
+    /* จัดตำแหน่งการเรียงของ link */
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* ขีดเส้นใต้ที่ลิ้งค์ */
+  }
+  
+  li a:hover:not(.active) {
+    /* เอาเม้าส์ชี้ไปที่ลิ้งค์  , not(.active) คือ ไม่รวม active */
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+
+  /* ------------------------------------------------------------- */
+
+
+  /*-----------------------dropdown -------------------------------*/
+
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #d61717;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #c1d31f;
+  }
+
+
+  /* ------------------------------------------------------------------------------------------------------ */
+  
+  /* ----------------------------------------------- */
+  /* -------------4.2 lab gridflex -----------------*/
+  /* ----------------------------------------------- */
+
+  /*ใช้ grid ในการจัดรูปแบบของ body ข่าว*/
+
+h2 {
+    text-align: center;
+}
+
+ #img_bangkokpost {
+    width: 80%;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #img_bangkokpost > img {
+    width: 50%;
+  }
+
+
+  /*This is the parent div*/
+
+
+ .bkp_container {
+   display: grid;
+   grid-template-columns: 300px 400px 400px ;
+   grid-template-rows: 100px 100px 100px;
+   grid-gap: 20px;
+   background-color: rgb(244, 248, 248);
+   justify-content: center;
+   
+ }
+
+ /* This is the child for .bkp_container */
+
+
+ .bkp_container > div {
+   background-color: rgb(121, 180, 247);
+   text-align: center;
+ }
+ 
+ .item2 {
+   grid-row: 1/ span 2;
+   grid-column: 2/ span 1;
+  
+ }
+
+
+ /* --------------------------------------------------- */
+
+/* 2. เว็บขายสินค้า shopee ใช้ grid จัดรูปแบบ*/
+
+ 
+ #img_shopee01 {
+  width: 80%;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#img_shopee01 > img {
+  width: 50%;
+}
+  
+/*This is the parent div*/
+
+.sp_container {
+    display: grid;
+    
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    height: 1400px;
+    background-color: #ecc3c3;
+    padding: 10px;
+}
+
+/*This is the chids items from 1-16 div*/
+
+.shopee_item1 {
+    height: 50px;
+    grid-column: 1 / 15;
+    background-color: rgb(243, 90, 30);
+    text-align: end;
+}
+
+.shopee_item2 {
+  height: 30px;
+    grid-column: 3 / 13;
+    background-color: rgb(238, 229, 225);
+    text-align: center;
+}
+
+.shopee_item3 {
+  height: 100px;
+  grid-column: 2 / 14;
+  background-color: rgb(38, 21, 185);
+  text-align: center;
+}
+
+.shopee_item4 {
+  height: 150px;
+  grid-column: 2 / 14;
+  background-color: rgb(234, 233, 243);
+  text-align: center;
+}
+
+.shopee_item5 {
+  height: 200px;
+  grid-column: 2 / 14;
+  background-color: rgb(28, 224, 116);
+  text-align: center;
+}
+
+.shopee_item6 {
+  height: 400px;
+  grid-column: 2 / 14;
+  background-color: rgb(236, 33, 94);
+  text-align: center;
+}
+
+.shopee_item7,
+.shopee_item8,
+.shopee_item9,
+.shopee_item10,
+.shopee_item11,
+.shopee_item12 {
+  height: 150px;
+  grid-column: 1 / 3;
+  background-color: rgb(18, 165, 18);
+}
+
+.shopee_item8 {
+  grid-column: 3 / 5;
+}
+
+.shopee_item9 {
+  grid-column: 5 / 7;
+}
+
+.shopee_item10 {
+  grid-column: 7 / 9;
+}
+
+.shopee_item11 {
+  grid-column: 9 / 11;
+}
+
+.shopee_item12 {
+  grid-column: 11 / 13;
+}
+
+.shopee_item13,
+.shopee_item14,
+.shopee_item15,
+.shopee_item16{
+  height: 150px;
+  grid-column: 1/3;
+  background-color: lightgreen;
+}
+
+.shopee_item14 {
+  grid-column: 3/5;
+}
+
+.shopee_item15 {
+  grid-column: 5/7;
+}
+
+.shopee_item16 {
+  grid-column: 7/9;
+}
+
+/* ----------------------------------------------- */
+
+/* 3. เว็บให้ความรู้ babelcoder  ใช้ grid จัดรูปแบบ */
+
+#img_babelcode01 {
+  width: 80%;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#img_babelcoder01 > img {
+  width: 50%;
+}
+
+/*This is the parent div*/
+
+.babel_container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-around;
+  height: 1000px;
+  background-color: #b4d5f0;
+  padding: 10px;
+}
+
+/*This is the chids items from 1-10 div*/
+
+.babel_item1 {
+  height: 50px;
+  grid-column: 1 / 7;
+  background-color: rgb(233, 231, 127);
+  text-align: start;
+}
+
+.babel_item2 {
+  height: 50px;
+  grid-column: 7 / 14;
+  background-color: rgb(233, 231, 127);
+  text-align: end;
+}
+
+.babel_item3,
+.babel_item4,
+.babel_item5,
+.babel_item6,
+.babel_item7,
+.babel_item8{
+  height: 150px;
+  grid-column: 3/7;
+  background-color: lightgreen;
+}
+
+.babel_item4 {
+  grid-column: 7/11;
+}
+
+.babel_item5 {
+  grid-column: 3/7;
+}
+
+.babel_item6 {
+  grid-column: 7/11;
+}
+
+.babel_item7 {
+  grid-column: 3/7;
+}
+
+.babel_item8 {
+  grid-column: 7/11;
+}
+
+.babel_item9 {
+  height: 50px;
+  grid-column: 4/10;
+  background-color: rgb(107, 41, 228);
+}
+
+.babel_item10 {
+  height: 100px;
+  grid-column: 1/14;
+  background-color: lightslategray;
+}
+
+/* ----------------------------------- */

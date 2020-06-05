@@ -1,0 +1,243 @@
+.heading {
+color: red;
+}
+
+#idName {
+    color: saddlebrown;
+}
+
+.className {
+    color: steelblue;
+}
+
+input:checked {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+div:hover {
+    /* hover เวลาเอาเม้าเลื่อนผ่าน ให้แสดง สถานะ อะไร */
+    color: violet;
+}
+
+/* div::before{
+    content: "Hello world.";
+}
+
+div::first-letter{
+    color: tomato;
+} */
+
+/* #tagH div{
+    color: teal;
+} */
+
+/* #tagH span {
+    color: turquoise;
+} */
+
+/* #tagH > div {
+    color: orchid;
+} */
+
+/* .plusCombinators + div{
+    color: brown;
+} */
+
+/* .plusCombinators ~ div{
+    
+    color: brown;
+} */
+/* ~ พิมพ์ กด shift + ~ ค้างไว้นะ   */
+
+/* input[type]{
+    
+    color: blue;
+} */
+/*  [ ] อ่านว่า สแคว แบ้คเก้ด */
+
+/* input[type="password"]{
+    background-color: silver;
+} */
+
+/* input[title~=this]{
+    background-color: darksalmon;
+} */
+
+/* input[title^="input"]{
+    background-color: forestgreen;
+} */
+/* ^ แปลว่า คำขึ้นต้นด้วย  */
+
+/* input[title|="input"]{
+    background-color: black;
+} */
+/* | ใช้สำหรับ เช่น inputตามด้วย- */
+
+/* input[title$="Form"]{
+    background-color: teal;
+} */
+/* $ หาคำที่อยู่หลังสุด เช่น Form แล้วทำ */
+
+
+/* input[title*="this"] {
+    background-color: hotpink;
+} */
+/* * คือ หาคำทั้งหมด เช่น this ไม่ว่าตำแหน่งไหนก็ตาม  */
+
+
+.textAlign {
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: start; */
+    /* text-align: center; */
+    /* text-align: justify; */
+    /* word-spacing: 3mm; */
+    /* ช่องว่างระหว่างคำ */
+}
+
+.verticalAlign {
+    /* vertical-align: super; */
+    /* vertical-align: sub; */
+}
+
+.textAlign {
+    /* text-decoration-line: overline; */
+    /* text-decoration-line: line-through; */
+    /* text-decoration-line: underline; */
+    /* ขีดเส้นบน กลาง ใต้ คำ */
+    /* text-decoration-color: red; */
+    /* text-decoration-style: dotted; */
+    /* text-decoration: overline solid red; */
+    /* ประกาศทีเดียว 3ค่า */
+}
+
+.textAlign {
+    /* text-indent: 10ch; */
+    /* ตั้งย่อหน้าแถวแรก */
+}
+
+.textDirection {
+    /* width: 50vw; */
+    /* direction: rtl; */
+    /* text-shadow: 5px 5px  red; */
+    font-family: Kanit;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    font-size: 20px;
+    /* font-variant: small-caps; */
+}
+
+@font-face {
+    /* เพิ่มfontsที่ต้องการ */
+    font-family: Kanit;
+    src: url(../font/Kanit-Regular.ttf);
+
+}
+
+.b {
+    list-style-type: decimal;
+    border: solid 1px black;
+    /* list-style-position: outside; */
+    list-style-image: url(http://www.woollettaquanet.info/SheetMusic/musicimages/animated-arrow.gif);
+
+}
+
+/* <!-- height and width --> */
+/* <h1>405-04 CSS border </h1> */
+
+.borderTable {
+    
+    border: 10px double deepskyblue;
+    /* width: 100vw; */
+    /* max-width: 500px; */
+    /* min-width: 650px; */
+    /* border-style: solid;  */
+    /* กรอบแบบไหน */
+    border-color: firebrick;
+    border-top-style: solid;
+    /* มุมบน */
+
+}
+
+table,
+td,
+th{
+    /* พิมพ์ shorthand property ช่วยประหยัดเวลาได้ */
+    border: 2px solid black;
+    border-collapse: collapse;
+    /* collapse คือ หน้าตาตารางทั่วไป */
+    /* border-spacing: 20px; */
+    /* ช่องว่าง ระหว่าง ช่องตาราง */
+    /* empty-cells: hide; */
+    /* ช่องที่ไม่มีข้อมูล */
+    /* table-layout: fixed; */
+    /* ช่อง มีความยาว ตามตัวหนังสือ */
+    /* width: 100%; */
+    caption-side: bottom;
+    /* ชื่อของตาราง ปกติ อยู่บนหัวตาราง  , bottomจะอยู่ล่าง */
+}
+
+
+/* <!-- 405-05 CSS image --> */
+
+img {
+    display: block;
+    border: solid black 1px;
+    border-radius: 50%;
+    /* ทำขอบรูปให้เป็นวงกลม */
+    width: 200px;
+    /* วงรี กำหนด กว้าง กับ สูง ให้ต่างกัน */
+    height: 250px;
+    opacity: 0.8;
+    margin: auto;
+
+}
+
+.bgTest {
+    /* width: 60vw; */
+    /* height: 130vh; */
+    /* background-color: navajowhite; */
+    /* background-image: url("https://i.pinimg.com/736x/37/6e/2d/376e2dab5652d6e1751e25cbcb52f2d5.jpg") */
+
+}
+
+body{
+    /* background-image: url("https://i.pinimg.com/736x/37/6e/2d/376e2dab5652d6e1751e25cbcb52f2d5.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* การตั้งbackground ให้ค้างเอาไว้ เวลาเลื่อนจอ */
+    
+}
+
+
+/* 405-06 CSS margin */
+
+.paddingMargin {
+    width: 100vw;
+    display: inline-block;
+    background-color: aquamarine;
+    /* padding: 10px 40px; */
+    /* ค่าระหว่าง ขอบ กับ ตัวหนังสือ แยกออกจากกัน */
+    margin: auto;
+    /* พื้นที่ข้างนอก ขยับออกไป */
+}
+
+
+/* 405-07 CSS display */ 
+
+.pDisplay {
+    /* display: inline; */
+    display: contents;
+    border: 1px black solid;
+    background-color: red;
+    font-family: Kanit;
+}
+
+
+/* 405-08 CSS grid */
+
+
+
